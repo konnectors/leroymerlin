@@ -1,0 +1,93 @@
+{
+  "version": "1.0.0",
+  "name": "Leroy Merlin connector",
+  "type": "konnector",
+  "language": "node",
+  "icon": "icon.png",
+  "slug": "leroymerlin",
+  "source": "git@github.com:konnectors/leroymerlin.git",
+  "editor": "Cozy",
+  "vendor_link": "https://www.leroymerlin.fr/",
+  "categories": [
+    "shopping"
+  ],
+  "fields": {
+    "login": {
+      "type": "text"
+    },
+    "password": {
+      "type": "password"
+    },
+    "advancedFields": {
+      "folderPath": {
+        "advanced": true,
+        "isRequired": false
+      }
+    }
+  },
+  "data_types": [
+    "bill"
+  ],
+  "screenshots": [],
+  "permissions": {
+    "files": {
+      "type": "io.cozy.files"
+    },
+    "bills": {
+      "type": "io.cozy.bills"
+    },
+    "banking operations": {
+      "type": "io.cozy.bank.operations"
+    },
+    "accounts": {
+      "type": "io.cozy.accounts"
+    }
+  },
+  "developer": {
+    "name": "Cozy Cloud",
+    "url": "https://cozy.io"
+  },
+  "langs": [
+    "fr",
+    "en"
+  ],
+  "locales": {
+    "fr": {
+      "short_description": "Récupère vos factures Leroy Merlin",
+      "long_description": "Récupère vos factures Leroy Merlin",
+      "permissions": {
+        "files": {
+          "description": "Utilisé pour sauver les fichiers"
+        },
+        "bills": {
+          "description": "Utilisé pour sauver les factures"
+        },
+        "banking operations": {
+          "description": "Utilisé pour sauver les opérations bancaires"
+        },
+        "accounts": {
+          "description": "Utilisé pour obtenir les données du compte"
+        }
+      }
+    },
+    "en": {
+      "short_description": "Fetch your Leroy Merlin bills",
+      "long_description": "Fetch your Leroy Merlin bills",
+      "permissions": {
+        "files": {
+          "description": "Used to save files"
+        },
+        "bills": {
+          "description": "Used to save bills"
+        },
+        "banking operations": {
+          "description": "Used to save banking operations"
+        },
+        "accounts": {
+          "description": "Required to get the account's data"
+        }
+      }
+    }
+  },
+  "manifest_version": "2"
+}
