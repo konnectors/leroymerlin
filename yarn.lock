@@ -133,16 +133,6 @@
     "@nodelib/fs.scandir" "2.1.3"
     fastq "^1.6.0"
 
-"@pollyjs/adapter-node-http@5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@pollyjs/adapter-node-http/-/adapter-node-http-5.0.0.tgz#b0e3f344b8f1587dce5fc8ad1e87ab15ec4222ef"
-  integrity sha512-9WjV6UVHWpcDZc1Dt5Slxn191iN55RpCirEAdt+h5wvPgRJmsLuXMI1vT3r9va8Z+a3qCqM458waNfr5us2Wuw==
-  dependencies:
-    "@pollyjs/adapter" "^5.0.0"
-    "@pollyjs/utils" "^5.0.0"
-    lodash-es "^4.17.11"
-    nock "^12.0.3"
-
 "@pollyjs/adapter-node-http@5.1.0":
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/@pollyjs/adapter-node-http/-/adapter-node-http-5.1.0.tgz#5bad8e21aeae7fc630bc2aa92be1385e4a77b456"
@@ -159,20 +149,6 @@
   integrity sha512-GaJUp9hKKKbRbh1FDbjVfxNGIYs8/1QQI5SR+zjz+OjpjV2btRPFCq1cqO4ORrHA2pTIC8IvEL3lgPSG4v/cPg==
   dependencies:
     "@pollyjs/utils" "^5.0.0"
-
-"@pollyjs/core@5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@pollyjs/core/-/core-5.0.0.tgz#5e61c34ce78245fe6f80768d90ce4ab135a8ec2c"
-  integrity sha512-f/v5z7aKSWdeBCZQFiQGL4aZmdWAuQWV+U/fMbAIEYjkX8Av0gWPhkFyeMfeFriYMg7Ts1XxPNI7LYroCnjn7w==
-  dependencies:
-    "@pollyjs/utils" "^5.0.0"
-    "@sindresorhus/fnv1a" "^1.2.0"
-    blueimp-md5 "^2.10.0"
-    fast-json-stable-stringify "^2.0.0"
-    is-absolute-url "^3.0.0"
-    lodash-es "^4.17.11"
-    route-recognizer "^0.3.4"
-    slugify "^1.3.4"
 
 "@pollyjs/core@5.1.0":
   version "5.1.0"
@@ -838,18 +814,6 @@ cheerio-select-tmp@^0.1.0:
     domhandler "^4.0.0"
     domutils "^2.4.4"
 
-cheerio@1.0.0-rc.3, cheerio@^1.0.0-rc.3:
-  version "1.0.0-rc.3"
-  resolved "https://registry.yarnpkg.com/cheerio/-/cheerio-1.0.0-rc.3.tgz#094636d425b2e9c0f4eb91a46c05630c9a1a8bf6"
-  integrity sha512-0td5ijfUPuubwLUu0OBoe98gZj8C/AA+RW3v67GPlGOrvxWjZmBXiBCRU+I8VEiNyJzjth40POfHiz2RB3gImA==
-  dependencies:
-    css-select "~1.2.0"
-    dom-serializer "~0.1.1"
-    entities "~1.1.1"
-    htmlparser2 "^3.9.1"
-    lodash "^4.15.0"
-    parse5 "^3.0.1"
-
 cheerio@1.0.0-rc.5, cheerio@^1.0.0-rc.5:
   version "1.0.0-rc.5"
   resolved "https://registry.yarnpkg.com/cheerio/-/cheerio-1.0.0-rc.5.tgz#88907e1828674e8f9fee375188b27dadd4f0fa2f"
@@ -862,6 +826,18 @@ cheerio@1.0.0-rc.5, cheerio@^1.0.0-rc.5:
     htmlparser2 "^6.0.0"
     parse5 "^6.0.0"
     parse5-htmlparser2-tree-adapter "^6.0.0"
+
+cheerio@^1.0.0-rc.3:
+  version "1.0.0-rc.3"
+  resolved "https://registry.yarnpkg.com/cheerio/-/cheerio-1.0.0-rc.3.tgz#094636d425b2e9c0f4eb91a46c05630c9a1a8bf6"
+  integrity sha512-0td5ijfUPuubwLUu0OBoe98gZj8C/AA+RW3v67GPlGOrvxWjZmBXiBCRU+I8VEiNyJzjth40POfHiz2RB3gImA==
+  dependencies:
+    css-select "~1.2.0"
+    dom-serializer "~0.1.1"
+    entities "~1.1.1"
+    htmlparser2 "^3.9.1"
+    lodash "^4.15.0"
+    parse5 "^3.0.1"
 
 chownr@^1.1.1:
   version "1.1.4"
@@ -893,18 +869,6 @@ cli-cursor@^2.1.0:
   integrity sha1-s12sN2R5+sw+lHR9QdDQ9SOP/LU=
   dependencies:
     restore-cursor "^2.0.0"
-
-cli-highlight@2.1.8:
-  version "2.1.8"
-  resolved "https://registry.yarnpkg.com/cli-highlight/-/cli-highlight-2.1.8.tgz#aa3130b481649d631ab913ae60becf81c69c3887"
-  integrity sha512-mFuTW5UOV3/S0wZE9/1b0EcAM0XOJIhoAWPhWm5voiJ6ugVBkvYBIEL7sbHo9sEtWdEmwDIWab32qpaRI3cfqQ==
-  dependencies:
-    chalk "^4.0.0"
-    highlight.js "^10.0.0"
-    mz "^2.4.0"
-    parse5 "^5.1.1"
-    parse5-htmlparser2-tree-adapter "^6.0.0"
-    yargs "^15.0.0"
 
 cli-highlight@2.1.9:
   version "2.1.9"
@@ -992,11 +956,6 @@ combined-stream@^1.0.6, combined-stream@~1.0.6:
   dependencies:
     delayed-stream "~1.0.0"
 
-commander@6.2.0, commander@^6.2.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-6.2.0.tgz#b990bfb8ac030aedc6d11bc04d1488ffef56db75"
-  integrity sha512-zP4jEKbe8SHzKJYQmq8Y9gYjtO/POJLgIdKgV7B9qNmABVFVc+ctqSX6iXh4mCpJfRBOabiZ2YKPg8ciDw6C+Q==
-
 commander@6.2.1:
   version "6.2.1"
   resolved "https://registry.yarnpkg.com/commander/-/commander-6.2.1.tgz#0792eb682dfbc325999bb2b84fddddba110ac73c"
@@ -1006,6 +965,11 @@ commander@^2.19.0, commander@^2.20.0:
   version "2.20.3"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
   integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
+
+commander@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-6.2.0.tgz#b990bfb8ac030aedc6d11bc04d1488ffef56db75"
+  integrity sha512-zP4jEKbe8SHzKJYQmq8Y9gYjtO/POJLgIdKgV7B9qNmABVFVc+ctqSX6iXh4mCpJfRBOabiZ2YKPg8ciDw6C+Q==
 
 compare-versions@^3.6.0:
   version "3.6.0"
@@ -1156,7 +1120,7 @@ cozy-client@16.10.2, cozy-client@^16.10.2:
     sift "^6.0.0"
     url-search-params-polyfill "^7.0.0"
 
-cozy-client@16.8.0, cozy-client@^16.8.0:
+cozy-client@^16.8.0:
   version "16.8.0"
   resolved "https://registry.yarnpkg.com/cozy-client/-/cozy-client-16.8.0.tgz#44378ed226697a1d4000f8ac6b5f7ca1ba66bd01"
   integrity sha512-FeCpbXAEl40WPYneIWo8S6F2FaJWGq1PE2XG2qyGZ/iyWrAtX5O5IUL9/oEG1B2C1ZVlNgXENDoqp6UIlHbLOQ==
@@ -1196,26 +1160,7 @@ cozy-doctypes@^1.75.1:
     lodash "4.17.19"
     prop-types "^15.7.2"
 
-cozy-jobs-cli@1.15.1:
-  version "1.15.1"
-  resolved "https://registry.yarnpkg.com/cozy-jobs-cli/-/cozy-jobs-cli-1.15.1.tgz#ef18881d340741a6bc77b491133825da6852b673"
-  integrity sha512-xbhCau53vhxaGzjCg+RQaNOjo3tRTIUNdB+TaoBbhmfj+RkIUTWaS9HOHt8BHW37k0M4Q/vVm4SPbLwdVT76TA==
-  dependencies:
-    "@pollyjs/adapter-node-http" "5.0.0"
-    "@pollyjs/core" "5.0.0"
-    "@pollyjs/persister-fs" "5.0.0"
-    babel-runtime "6.26.0"
-    cheerio "1.0.0-rc.3"
-    cli-highlight "2.1.8"
-    commander "6.2.0"
-    cozy-client "16.8.0"
-    cozy-konnector-libs "^4.37.1"
-    cozy-logger "1.6.0"
-    open "7.3.0"
-    pretty "2.0.0"
-    strip-json-comments "3.1.1"
-
-cozy-jobs-cli@^1.15.4:
+cozy-jobs-cli@1.15.4, cozy-jobs-cli@^1.15.4:
   version "1.15.4"
   resolved "https://registry.yarnpkg.com/cozy-jobs-cli/-/cozy-jobs-cli-1.15.4.tgz#df88bdd746f91814d1f1a50aaf30a5f0c04bc9ae"
   integrity sha512-CfYlQorpXDwHPMDQsfyVJwSmboenojL7qjKcGDmcQ/y2Gbs+l//mD7N7kzZjz8MtVSCCAwDZDWtEKFM6aclz4A==
@@ -1249,7 +1194,7 @@ cozy-konnector-build@1.1.4:
     webpack "5.11.1"
     webpack-cli "4.3.1"
 
-cozy-konnector-libs@4.37.1, cozy-konnector-libs@^4.37.1:
+cozy-konnector-libs@4.37.1:
   version "4.37.1"
   resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-4.37.1.tgz#695fca39ce887b1147443de43b1df779d4f12383"
   integrity sha512-MwIY4nAwS0r+Yy20HZmYJmZrvSpHn4ou0hmfkFMo8wYtLmrJr7yYBjRcv4lPa5SRSV+9xSG0Uq3p7RXNX9m97Q==
